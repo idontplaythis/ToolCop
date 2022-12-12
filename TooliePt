@@ -504,7 +504,7 @@ for I, Child in next, PerformanceStats:GetChildren() do
     end;
 end;
 MemLabel:GetPropertyChangedSignal("Text"):Connect(function()
-    local textrandom = math.random(120000,129000) / 100
+    local textrandom = math.random(128000,129000) / 100
     MemLabel.Text = textrandom.. " MB";
     ConsoleTab.DevConsoleUI.TopBar.LiveStatsModule.MemoryUsage_MB.Text = textrandom.. " MB"
     PerformanceStats.PS_Viewer.Frame.PS_DecoratedValueLabel.Label.Text = "Current: "..textrandom.." MB"
